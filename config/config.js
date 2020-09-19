@@ -7,6 +7,15 @@ module.exports = {
     "database": process.env.DB_DATABASE,
     "host": process.env.DB_HOST,
     "dialect": "postgres"
+    // for heroku uncomment this:
+    // dialectOptions: {
+    //   ssl: {
+    //     require: true,
+    //     rejectUnauthorized: false,
+    //   },
+    //   keepAlive: true,        
+    // },      
+    // ssl: true
   },
   "production": {
     "username": process.env.DB_USERNAME,
